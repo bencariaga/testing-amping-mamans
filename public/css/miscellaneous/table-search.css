@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #009879;
+    --primary-color-hover: #007f6a;
+    --border-color: #000;
+    --search-border-color: #000;
+    --text-color: #333;
+    --header-bg: #1b2430;
+    --header-text: #fff;
+    --even-row-bg: #f3f3f3;
+    --last-row-border: #0000bb;
+    --highlight-color: #009879;
+    --toggle-bg: #0000bb;
+    --blue-btn: #0000bb;
+    --page-btn: #009879;
+    --table-header-bg: #0000bb;
+}
+
+[data-theme="dark"] {
+    --primary-color: #80cbc4;
+    --primary-color-hover: #4db6ac;
+    --border-color: #555;
+    --search-border-color: #fff;
+    --text-color: #eee;
+    --header-bg: #121a26;
+    --header-text: #eee;
+    --even-row-bg: #1a1a1a;
+    --last-row-border: #4a76d0;
+    --highlight-color: #80cbc4;
+    --toggle-bg: #4a76d0;
+    --blue-btn: #4a76d0;
+    --page-btn: #009879;
+    --table-header-bg: #4a76d0;
+}
+
+.theme-toggle {
+    background-color: var(--toggle-bg);
+}
+
+.navbar-top {
+    background-color: var(--header-bg);
+}
+
+.input-group .form-control,
+.input-group .btn {
+    border: 1px solid var(--border-color);
+}
+
+.input-group .btn {
+    background-color: var(--blue-btn);
+}
+
+.table-responsive.shadow-sm {
+    overflow-x: auto;
+}
+
+.font-semibold {
+    font-family: "Segoe UI Semibold", "Segoe UI", Arial, sans-serif;
+    font-weight: 600;
+}
+
+.common-table {
+    width: 100%;
+    min-width: 400px;
+    font-size: 0.9em;
+    border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.common-table thead tr {
+    background-color: var(--table-header-bg);
+    color: var(--header-text);
+    text-align: left;
+    font-weight: bold;
+}
+
+.common-table th,
+.common-table td {
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+}
+
+.common-table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.common-table tbody tr:nth-of-type(even) {
+    background-color: var(--even-row-bg);
+}
+
+.common-table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--last-row-border);
+}
+
+.common-table tbody tr:hover,
+.common-table tbody tr.active-row {
+    font-weight: bold;
+    color: var(--highlight-color);
+}
+
+.pagination-info-buttons .btn-outline-secondary,
+.common-pagination-info-buttons .btn-outline-secondary {
+    border-color: var(--border-color) !important;
+    color: var(--border-color) !important;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.pagination-info-buttons .btn-outline-secondary:hover,
+.pagination-info-buttons .btn-outline-secondary.active,
+.common-pagination-info-buttons .btn-outline-secondary:hover,
+.common-pagination-info-buttons .btn-outline-secondary.active {
+    border-color: var(--primary-color) !important;
+    background-color: var(--page-btn);
+    color: #fff !important;
+}

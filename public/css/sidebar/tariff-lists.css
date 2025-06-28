@@ -1,0 +1,144 @@
+:root {
+    --primary-color: #0000bb;
+    --primary-hover: #0b5ed7;
+    --border-color: #a2a9af;
+    --header-bg: #0000bb;
+    --header-text: #fff;
+    --even-row-bg: #f3f3f3;
+    --highlight-bg: #009879;
+    --readonly-bg: #e9ecef;
+    --readonly-border: #ddd;
+    --readonly-text: #6c757d;
+    --dropdown-border: #000;
+    --edit-button: #0000bb;
+}
+
+[data-theme="dark"] {
+    --primary-color: #4b77d0;
+    --border-color: #555;
+    --header-bg: #4b77d0;
+    --even-row-bg: #2c2c2c;
+    --readonly-bg: #3a3a3a;
+    --readonly-border: #555;
+    --readonly-text: #aaa;
+    --dropdown-border: transparent;
+    --edit-button: #4b77d0;
+}
+
+[button="Update Data"] {
+    --edit-button: #198754;
+    --border-color: #000;
+}
+
+.navbar-top {
+    background-color: #1b2430;
+}
+
+.toolbar {
+    height: 40px;
+}
+
+.toolbar > .btn,
+#sortSelect {
+    min-width: 140px;
+    height: 40px;
+}
+
+#sortSelect {
+    border: 1px solid var(--dropdown-border-light);
+    transition: border-color 0.3s ease;
+    border-color: var(--dropdown-border);
+}
+
+#editUpdateBtn {
+    background-color: var(--edit-button);
+    border-color: transparent;
+}
+
+.tariff-section {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--card-bg);
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-top: 0.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.expense-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+    border: none;
+}
+
+.expense-table thead tr {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+}
+
+.expense-table th,
+.expense-table td {
+    padding: 12px 15px;
+    border: none;
+    vertical-align: middle;
+}
+
+.expense-table tr {
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+}
+
+.expense-table tbody tr:nth-of-type(even) {
+    background-color: var(--even-row-bg);
+}
+
+.expense-table tbody tr:hover {
+    background-color: var(--highlight-bg);
+    color: #fff;
+}
+
+.expense-table tbody tr:last-of-type {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.money-amount-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.money-amount-container input {
+    width: 100%;
+}
+
+th.money-amount-header.text-center {
+    border: 1.5px solid var(--border-color);
+}
+
+.tariff-input,
+.range-input {
+    text-align: right;
+    border: 1px solid transparent;
+    width: 100%;
+}
+
+.tariff-input:not([readonly]),
+.range-input:not([readonly]) {
+    border-color: var(--border-color);
+}
+
+.tariff-input[readonly],
+.range-input[readonly] {
+    background-color: transparent;
+    border-color: transparent;
+    color: inherit;
+    cursor: default;
+    pointer-events: none;
+}

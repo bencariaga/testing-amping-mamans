@@ -1,0 +1,55 @@
+:root {
+    --primary-bg: #d7ecfd;
+    --border: #e5e7eb;
+    --blue-btn: #0000bb;
+    --text-color: #000;
+}
+
+[data-theme="dark"] {
+    --blue-btn: #4a76d0;
+    --text-color: #fff;
+}
+
+#regForm {
+    color: #000;
+    font-weight: bold;
+}
+
+#regFormTitle {
+    color: var(--text-color);
+}
+
+#addEmergencyContactBtn, #addHouseholdMemberBtn,
+#removeEmergencyContactBtn, #removeHouseholdMemberBtn {
+    width: 279px;
+    border-radius: 6px;
+}
+
+#prevBtn, #nextBtn {
+    height: 2.5rem;
+    width: 7rem;
+}
+
+#prevBtn {
+    background-color: #198754;
+}
+
+#nextBtn, #addEmergencyContactBtn, #addHouseholdMemberBtn,
+#removeEmergencyContactBtn, #removeHouseholdMemberBtn {
+    background-color: var(--blue-btn);
+}
+
+.required-asterisk {
+    color: red;
+}
+
+.form-section-card {
+    background: var(--primary-bg);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.form-section-card:last-of-type {
+    margin-bottom: 4rem;
+}

@@ -1,0 +1,68 @@
+:root {
+    --input-bg: #fff;
+    --input-text: #000;
+    --dropdown-border: #000;
+}
+
+[data-theme="dark"] {
+    --dropdown-border: transparent;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+#daySelect, #monthSelect, #yearSelect {
+    height: 35px;
+}
+
+.date-dropdown-custom {
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    border-color: var(--dropdown-border);
+}
+
+.date-dropdown-custom:focus-within {
+    outline: 2px solid var(--primary-hover);
+    outline-offset: 2px;
+}
+
+.card-budget {
+    background-color: var(--card-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-budget:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.card-title-custom {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.card-amount-custom {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.card-subtitle-custom {
+    font-size: clamp(0.75rem, 1.8vw, 0.9rem);
+    opacity: 0.8;
+    color: var(--text-color);
+}
+
+.card-subamount-custom {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-weight: 700;
+    color: var(--primary-color);
+}

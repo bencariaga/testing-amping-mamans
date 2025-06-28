@@ -1,0 +1,201 @@
+:root {
+    --header-bg: #1b2430;
+}
+
+[data-theme="dark"] {
+    --header-bg: #1b2430;
+}
+
+.theme-toggle {
+    background-color: var(--toggle-bg);
+}
+
+.navbar-top {
+    background-color: var(--header-bg);
+}
+
+.input-group .form-control,
+.input-group .btn,
+.date-picker-group .form-select,
+#viewCount {
+    border: 1px solid var(--border-color);
+    box-shadow: none;
+}
+
+.input-group .btn {
+    background-color: var(--search-btn);
+}
+
+.controls-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.date-range-container,
+.summary-container {
+    flex-basis: 45%;
+    min-width: 300px;
+}
+
+.summary-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.summary-container dl {
+    width: 100%;
+    max-width: 450px;
+    font-size: 0.9rem;
+    display: table;
+}
+
+.summary-item {
+    display: table-row;
+}
+
+.summary-item dt,
+.summary-item dd {
+    display: table-cell;
+    padding: 0.3rem 0;
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: middle;
+}
+
+.summary-item.total dt,
+.summary-item.total dd {
+    font-weight: bold;
+    border-bottom: 2px solid var(--text-color);
+}
+
+.summary-item dt {
+    text-align: right;
+    white-space: nowrap;
+    padding-right: 1rem;
+}
+
+.summary-item dd {
+    text-align: left;
+    padding-left: 1rem;
+    white-space: nowrap;
+}
+
+.summary-item dd .money-currency {
+    font-weight: bold;
+    margin-right: 0.25rem;
+}
+
+.summary-item dd .money-value {
+    float: right;
+    text-align: right;
+    min-width: 120px;
+    padding-right: 3rem;
+}
+
+.date-picker-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.date-picker-label {
+    display: inline-block;
+    width: 60px;
+    min-width: 60px;
+    text-align: right;
+}
+
+.common-table th, .common-table td {
+    text-align: center;
+}
+
+.common-table {
+    width: 100%;
+    min-width: 400px;
+    font-size: 0.9em;
+    border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.common-table thead tr {
+    background-color: var(--table-header-bg);
+    color: var(--header-text);
+    text-align: left;
+    font-weight: bold;
+}
+
+.common-table th,
+.common-table td {
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+}
+
+.common-table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.common-table tbody tr:nth-of-type(even) {
+    background-color: var(--even-row-bg);
+}
+
+.common-table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--last-row-border);
+}
+
+.common-table tbody tr:hover,
+.common-table tbody tr.active-row {
+    font-weight: bold;
+    color: var(--highlight-color);
+}
+
+.common-table td.money-amount-cell {
+    text-align: left;
+}
+
+.common-table td.money-amount-cell .money-currency {
+    margin-right: 5px;
+}
+
+.common-table td.money-amount-cell .money-value {
+    display: inline-block;
+    min-width: 80px;
+}
+
+.pagination-controls-container {
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.items-per-page-selector .form-select-sm {
+    width: auto;
+    display: inline-block;
+}
+
+.table-responsive.shadow-sm {
+    overflow-x: auto;
+}
+
+.font-semibold {
+    font-family: "Segoe UI Semibold", "Segoe UI", Arial, sans-serif;
+    font-weight: 600;
+}
+
+.pagination-info-buttons .btn-outline-secondary {
+    border-color: var(--border-color) !important;
+    color: var(--border-color) !important;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.pagination-info-buttons .btn-outline-secondary:hover,
+.pagination-info-buttons .btn-outline-secondary.active {
+    border-color: var(--primary-color) !important;
+    background-color: var(--page-btn);
+    color: #fff !important;
+}
