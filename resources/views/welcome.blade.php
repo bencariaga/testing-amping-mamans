@@ -12,7 +12,7 @@
         <link href="{{ asset('css/authentication/welcome.css') }}" rel="stylesheet">
     </head>
 
-    <body style="background-image: url('{{ asset('images/amping-office.png') }}'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+    <body style="background-image: url('{{ asset('images/amping-office.png') }}'); background-size: contain; background-repeat: no-repeat; background-position: center center; min-height: 100vh; margin: 0; padding: 0;">
         <button class="theme-toggle" id="themeToggle" title="Toggle dark mode">
             <i class="fas fa-moon"></i>
         </button>
