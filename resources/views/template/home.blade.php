@@ -13,7 +13,7 @@
         @yield('styles')
     </head>
 
-    <body style="background-image: url('{{ asset('images/amping-office.png') }}'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+    <body style="background-image: url('{{ asset('images/amping-office.png') }}'); display: grid; background-size: cover; background-repeat: no-repeat; place-items: center center;">
         <button class="theme-toggle" id="themeToggle" title="Toggle dark mode.">
             <i class="fas fa-moon"></i>
         </button>
